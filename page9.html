@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 9 - JavaScript</title>
+    <script>
+        function showMessage() {
+            alert("Hello, this is JavaScript!");
+        }
+
+        function changeContent() {
+            var contentParagraph = document.getElementById("content");
+            contentParagraph.innerHTML = "JavaScript can dynamically update web content!";
+            contentParagraph.style.color = "green";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Page 9 - JavaScript</h1>
+    </header>
+    
+    <section>
+        <h2>Scripting with JavaScript</h2>
+        <p>Click the button below to see JavaScript in action:</p>
+        <button onclick="showMessage()">Click me</button>
+        
+        <h3>Interactive Content Change</h3>
+        <p id="content">JavaScript can add interactivity to web pages. Click the button again:</p>
+        <button onclick="changeContent()">Change Content</button>
+        
+        <p><a href="index.html">Back to Home</a></p>
+    </section>
+</body>
+</html>
